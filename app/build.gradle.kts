@@ -37,7 +37,6 @@ android {
 dependencies {
     // Kotlin
     compileOnly(libs.xposed.api)
-    compileOnly (de.robv.android.xposed:api:82)
     implementation(libs.core.ktx)
 
     // Jetpack Compose
