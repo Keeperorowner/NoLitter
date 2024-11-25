@@ -25,5 +25,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Release
-          path: ${{github.workspace}}/app/build/outputs/apk/release/*.apk
+          path: ${{github.workspace}}/app/build/outputs
           if-no-files-found: warn
