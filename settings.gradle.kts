@@ -27,6 +27,6 @@ dependencyResolutionManagement {
             }
         }
     }
-
+}
 rootProject.name = "NoLitter"
 include(":app")
