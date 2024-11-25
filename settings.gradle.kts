@@ -16,10 +16,17 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://jcenter.bintray.com")
-        maven("https://jitpack.io")
+        maven("https://jitpack.io") {
+            content {
+                includeGroupByRegex("com\\.github.*")
+            }
+        }
+        maven("https://api.xposed.info/") {
+            mavenContent {
+                includeGroup("de.robv.android.xposed")
+            }
+        }
     }
-}
 
 rootProject.name = "NoLitter"
 include(":app")
