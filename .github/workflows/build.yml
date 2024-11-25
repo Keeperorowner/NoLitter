@@ -1,5 +1,6 @@
 name: NoLitter
 on:
+  workflow_dispatch:
   release:
     types: [published]
 jobs:
